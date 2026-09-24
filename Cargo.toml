@@ -1,0 +1,11 @@
+[package]
+name = "dot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ratatui = "0.29"
+
+# Optimize even for plain `cargo run` so animation stays smooth.
+[profile.dev]
+opt-level = 3
